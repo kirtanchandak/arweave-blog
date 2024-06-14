@@ -6,20 +6,22 @@ import ArConnectStrategy from "@arweave-wallet-kit/arconnect-strategy";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Create from "./pages/Create.jsx";
+import View from "./pages/View.jsx";
+import ViewPost from "./pages/ViewPost.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
   },
-  // {
-  //   path: "/view",
-  //   element: <View />,
-  // },
-  // {
-  //   path: "/view/:postId",
-  //   element: <ViewPost />,
-  // },
+  {
+    path: "/view",
+    element: <View />,
+  },
+  {
+    path: "/view/:postId",
+    element: <ViewPost />,
+  },
   {
     path: "/create",
     element: <Create />,
